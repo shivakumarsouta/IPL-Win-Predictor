@@ -2,6 +2,7 @@ import streamlit as st
 import pickle
 import pandas as pd
 import sklearn
+import base64
 
 teams = ['Sunrisers Hyderabad',
  'Mumbai Indians',
@@ -20,6 +21,7 @@ cities = ['Hyderabad', 'Bangalore', 'Mumbai', 'Indore', 'Kolkata', 'Delhi',
        'Sharjah', 'Mohali', 'Bengaluru']
 
 pipe = pickle.load(open('pipe.pkl','rb'))
+st.set_page_config(page_title="IPL Win Predictor",page_icon="Images/favicon.ico", layout="wide")
 st.title('IPL Win Predictor')
 
 col1, col2 = st.columns(2)
@@ -56,3 +58,24 @@ if st.button('Predict Probability'):
     win = result[0][1]
     st.header(batting_team + "- " + str(round(win*100)) + "%")
     st.header(bowling_team + "- " + str(round(loss*100)) + "%")
+
+def get_base64_image(image_path):
+    with open(image_path, "rb") as img_file:
+        encoded_string = base64.b64encode(img_file.read()).decode()
+    return f"data:image/png;base64,{encoded_string}"
+
+def set_background(image_path):
+    base64_image = get_base64_image(image_path)
+    background_css = f"""
+    <style>
+    .stApp {{
+        background-image: url("{base64_image}");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+    }}
+    </style>
+    """
+    st.markdown(background_css, unsafe_allow_html=True)
+set_background("Images/Home_Bg.jpg")
