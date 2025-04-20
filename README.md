@@ -51,4 +51,4 @@ A machine learning-powered web app built with *Streamlit* that predicts the winn
 # Contact
   Made with ❤️ by Shiva Kumar Souta
   📧 Reach me at: shivakumarsouta18@gmail.com
-  🌐 Portfolio: [https://yourportfolio.com](https://shivakumarsouta-portfolio.vercel.app/)
+  🌐 <a href="https://shivakumarsouta-portfolio.vercel.app/" target="_blank">Visit My Portfolio</a>
