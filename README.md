@@ -4,7 +4,7 @@ A machine learning-powered web app built with *Streamlit* that predicts the winn
 
 # Live Demo
 
-[Click here to try it out!](https://your-streamlit-app-link)  
+ 🌐 <a href="https://ipl-win-predictor-by-sk.streamlit.app" target="_blank" alt="Broken link">Try now..</a>
 
 
 # Features
@@ -51,4 +51,4 @@ A machine learning-powered web app built with *Streamlit* that predicts the winn
 # Contact
   Made with ❤️ by Shiva Kumar Souta
   📧 Reach me at: shivakumarsouta18@gmail.com
-  🌐 <a href="https://shivakumarsouta-portfolio.vercel.app/" target="_blank">Visit My Portfolio</a>
+  🌐 <a href="https://shivakumarsouta-portfolio.vercel.app/" target="_blank" alt="Broken Link">Visit My Portfolio</a>
