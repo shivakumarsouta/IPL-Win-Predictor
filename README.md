@@ -33,7 +33,7 @@ A machine learning-powered web app built with *Streamlit* that predicts the winn
 
 1. Clone this repo:
    ```bash
-   git clone https://github.com/shivkumars005/IPL-Win-Predictor.git
+   git clone https://github.com/shivakumarsouta/IPL-Win-Predictor.git
    cd IPL-Win-Predictor
    pip install -r requirements.txt
    streamlit run app.py
